@@ -46,19 +46,17 @@ Visulise:
 - Real vs nominal wage plots
 
 ## Data sources: 
-London has high data availablity, which will be the bases for my exploration. I also want to replicate analysis for Melbourne, to compare cities. Both data source options are noted in the table below.
+Some data sources to explore, or replicate with dummy data if unable to acess Open Source.
 
-| Geography | Source | Dataset | Description | Key Variables | Use Case |
-|----------|--------|--------|------------|--------------|----------|
-| 🇬🇧 London | ONS (Office for National Statistics) | ASHE (Annual Survey of Hours and Earnings) | Wage data by occupation, region | Earnings, occupation, region | Wage regressions; urban vs non-urban comparison |
-| 🇬🇧 London | ONS (Office for National Statistics) | Labour Force Survey (LFS) | Individual-level labour market data | Education, employment status, demographics | Control variables; micro-level analysis |
-| 🇬🇧 London | ONS | Travel-to-Work Areas (TTWA) | Geographic definitions of labour markets | Commuting zones, employment flows | Define labour markets; spatial comparisons |
-| 🇬🇧 London | Nomis (ONS portal) | Regional labour statistics | Clean local labour market data | Earnings, employment by sector, occupation | Borough-level analysis; spatial decomposition |
-| 🇬🇧 London | Land Registry + ONS | Housing data | Property prices and rental costs | Median rents, house prices | Real wage adjustment; cost-of-living modelling |
-| 🇬🇧 London | OpenStreetMap / Transport APIs | Transport & accessibility data | Commute times and connectivity | Travel time, accessibility, distance | Functional urban density; spatial accessibility analysis |
-| 🇦🇺 Melbourne | ABS (Australian Bureau of Statistics) | Census (TableBuilder) | National census microdata | Earnings, occupation, commuting patterns | Cross-sectional wage analysis; spatial patterns |
-| 🇦🇺 Melbourne | HILDA Survey | Panel dataset | Longitudinal household survey | Individual wages, employment history | Panel regressions; controlling for sorting (fixed effects) |
-| 🇦🇺 Melbourne | AURIN | Urban spatial datasets | Integrated spatial data platform | Jobs density, housing, infrastructure | Agglomeration and density measures |
-| 🇦🇺 Melbourne | CoreLogic (or similar) | Property data | Housing market data | House prices, rents | Cost-of-living adjustment; real wages analysis |
-
-
+| Geography | Source | Dataset | Description | Key Variables | Use Case | Open Source |
+|----------|--------|--------|------------|--------------|----------|------------|
+| London | ONS (Office for National Statistics) | ASHE (Annual Survey of Hours and Earnings) | Wage data by occupation, region | Earnings, occupation, region | Wage regressions; urban vs non-urban comparison | No (restricted microdata; limited public extracts available) |
+| London | ONS (Office for National Statistics) | Labour Force Survey (LFS) | Individual-level labour market data | Education, employment status, demographics | Control variables; micro-level analysis | No (microdata restricted; some aggregates open) |
+| London | ONS | Travel-to-Work Areas (TTWA) | Geographic definitions of labour markets | Commuting zones, employment flows | Define labour markets; spatial comparisons | Yes |
+| London | Nomis (ONS portal) | Regional labour statistics | Clean local labour market data | Earnings, employment by sector, occupation | Borough-level analysis; spatial decomposition | Yes |
+| London | Land Registry + ONS | Housing data | Property prices and rental costs | Median rents, house prices | Real wage adjustment; cost-of-living modelling | Yes |
+| London | OpenStreetMap / Transport APIs | Transport & accessibility data | Commute times and connectivity | Travel time, accessibility, distance | Functional urban density; spatial accessibility analysis | Yes |
+| Melbourne | ABS (Australian Bureau of Statistics) | Census (TableBuilder) | National census microdata | Earnings, occupation, commuting patterns | Cross-sectional wage analysis; spatial patterns | Partial (aggregates open; detailed microdata restricted) |
+| Melbourne | HILDA Survey | Panel dataset | Longitudinal household survey | Individual wages, employment history | Panel regressions; controlling for sorting (fixed effects) | No (restricted access) |
+| Melbourne | AURIN | Urban spatial datasets | Integrated spatial data platform | Jobs density, housing, infrastructure | Agglomeration and density measures | Partial (free with registration) |
+| Melbourne | CoreLogic (or similar) | Property data | Housing market data | House prices, rents | Cost-of-living adjustment; real wages analysis | No (commercial dataset) |
