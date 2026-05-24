@@ -36,7 +36,7 @@ Cost of living index is built from:
    - Rent (proxy: housing costs)
    - Food (Proxy: Consumer Price Index)
    - Optional: transport + inflation
-   - Optional: social includion costs, such as a meal out or movie tickets
+   - Optional: social participation costs, such as a meal out or movie tickets
 
 ### 3. Spatial Gradient Model
 log(wage_i) = β₀ + β₁ distance_to_CBD + controls + ε
@@ -83,9 +83,13 @@ Tables:
 | Cost of Living | ONS / Land Registry | Housing data | Property prices and rental costs | Median rents, house prices | Real wage adjustment; cost-of-living modelling | Yes |
 | Cost of Living (Optional) | TfL / ONS | Transport + inflation data | Transport costs and price indices | Travel costs, CPI | Extended cost-of-living adjustment | Partial (transport data often open; CPI open) |
 | Spatial | ONS | Geography datasets | Administrative boundaries (borough, MSOA) | Geographic identifiers | Spatial mapping; regional aggregation | Yes |
-| Spatial | Constructed | Distance to CBD | Calculated distance to economic centre (e.g. City of London) | Distance measures | Spatial gradient analysis; proximity effects | Yes (derived from open data) |
+| Spatial | Constructed | Distance to CBD | Calculated distance to economic centre (e.g. City of London) | Distance measures | Spatial gradient analysis; proximity effects | Yes (derived from open data) || Cost of Living (Social Inclusion) | ONS | CPI – Recreation & Culture | Price index covering leisure activities (e.g. cinema, restaurants, cultural activities) | Price index, subcategory inflation | Proxy for social participation costs; adjust real wages for leisure affordability | Yes |
+| Cost of Living (Social Inclusion) | BFI (British Film Institute) | Statistical Yearbook (Cinema data) | Industry data on cinema attendance and market activity | Ticket prices (indirect), admissions, revenue | Proxy for cinema affordability and leisure consumption | Yes |
+| Cost of Living (Social Inclusion) | ONS | CPI microdata (price quotes) | Underlying price quotes used for CPI construction | Item-level prices (where available) | Granular proxy for specific leisure costs (e.g. meals out, entertainment) | Partial (restricted detail) |
+| Cost of Living (Social Inclusion) | Numbeo (or similar) | Cost of Living datasets | Crowdsourced price data for goods and services by city | Meal prices, cinema tickets, leisure costs | Direct proxy for social inclusion costs (cross-city comparison) | No (paid access for full datasets) |
 
 ## Repository Structure (tbd.)
+
 urban-wage-premium-london/
 │
 ├── data/
