@@ -6,8 +6,6 @@ This project aims to quantify:
 - Whether London’s wage premium persists after adjusting for cost of living and social inclusion
 - How the premium varies within the city (by geography, occupation, income level)
 
-
-## Aproach
 ### Research Question
 key insights: Does a real urban wage premium exist in London?
 - does the London wage premium survives after cost-of-living adjustment?
@@ -17,21 +15,19 @@ Supporting questions:
 - How does the wage premium change with distance from the city centre?
 - Is the premium concentrated among high-skill occupations?
 - How much of the premium is driven by: location (proximity) and worker characteristics (education, occupation)
-
 ### Economic Frameworks
 This project tests key mechanisms from urban labour economics:
 - Agglomeration effects: Cities increase productivity through density, matching, and spillovers
 - Sorting: Higher-ability workers self-select into cities
 - Real vs nominal trade-off: Higher wages may be offset by higher living costs
 
-
-### Methodology
-1. Baseline Model (Nominal Wages)
+## Methodology
+### 1. Baseline Model (Nominal Wages)
 log(wage_it) = β₀ + β₁ London_i + β₂ X_it + ε_it
   Where:
   X_it = education, occupation, age, gender
 
-2. Real Wage Adjustment
+### 2. Real Wage Adjustment
 real_wage = wage / cost_of_living_index
 
 Cost of living index is built from:
@@ -40,16 +36,16 @@ Cost of living index is built from:
    - Optional: transport + inflation
    - Optional: social includion costs, such as a meal out or movie tickets
 
-3. Spatial Gradient Model
+### 3. Spatial Gradient Model
 log(wage_i) = β₀ + β₁ distance_to_CBD + controls + ε
 Tests: Is proximity to economic centre priced into wages?
 
-5. Within-City Inequality
+### 5. Within-City Inequality
 Estimate models separately by:
 - occupation group (high-skill vs low-skill)
 - income decile
 
-6. Robustness
+### 6. Robustness
 - Fixed effects (if panel data available)
 - Instrument for density (optional)
 - Compare:
@@ -57,12 +53,12 @@ Estimate models separately by:
     - London vs rest of UK
 - Compare: Melbourne data
 
-7. Extenions:
+### 7. Extenions:
 - Add commuting time to test “functional urban density”
 - Extend to Melbourne (cross-city comparison)
 - Model remote work impact on wage premium
 
-### Outputs
+## Outputs
 Charts:
 - Wage vs distance from CBD
 - Nominal vs real wage comparison
@@ -73,7 +69,7 @@ Tables:
 - Regression outputs
 - Decomposition (explained vs unexplained wage gap)
 
-### Data Sources
+## Data Sources
 
 
 ## Housekeeping 
