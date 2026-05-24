@@ -15,6 +15,7 @@ Supporting questions:
 - How does the wage premium change with distance from the city centre?
 - Is the premium concentrated among high-skill occupations?
 - How much of the premium is driven by: location (proximity) and worker characteristics (education, occupation)
+
 ### Economic Frameworks
 This project tests key mechanisms from urban labour economics:
 - Agglomeration effects: Cities increase productivity through density, matching, and spillovers
@@ -39,6 +40,7 @@ Cost of living index is built from:
 
 ### 3. Spatial Gradient Model
 log(wage_i) = β₀ + β₁ distance_to_CBD + controls + ε
+
 Tests: Is proximity to economic centre priced into wages?
 
 ### 5. Within-City Inequality
