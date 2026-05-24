@@ -73,10 +73,19 @@ Tables:
 - Decomposition (explained vs unexplained wage gap)
 
 ## Data Sources
+## Data Sources
 
+| Category | Source | Dataset | Description | Key Variables | Use Case | Open Source |
+|----------|--------|--------|------------|--------------|----------|------------|
+| Labour Market | ONS | ASHE (Annual Survey of Hours and Earnings) | Wage data by occupation and region | Earnings, occupation, region | Wage regressions; regional comparisons | No (restricted microdata; limited public extracts available) |
+| Labour Market | ONS | Labour Force Survey (LFS) | Individual-level labour market data | Education, employment status, demographics | Control variables; micro-level analysis | No (microdata restricted; some aggregates open) |
+| Labour Market | Nomis (ONS) | Regional labour statistics | Borough and regional labour indicators | Earnings, occupation, employment by sector | Spatial analysis; borough-level decomposition | Yes |
+| Cost of Living | ONS / Land Registry | Housing data | Property prices and rental costs | Median rents, house prices | Real wage adjustment; cost-of-living modelling | Yes |
+| Cost of Living (Optional) | TfL / ONS | Transport + inflation data | Transport costs and price indices | Travel costs, CPI | Extended cost-of-living adjustment | Partial (transport data often open; CPI open) |
+| Spatial | ONS | Geography datasets | Administrative boundaries (borough, MSOA) | Geographic identifiers | Spatial mapping; regional aggregation | Yes |
+| Spatial | Constructed | Distance to CBD | Calculated distance to economic centre (e.g. City of London) | Distance measures | Spatial gradient analysis; proximity effects | Yes (derived from open data) |
 
-## Housekeeping 
-### Repository Structure
+## Repository Structure (tbd.)
 urban-wage-premium-london/
 │
 ├── data/
@@ -101,7 +110,7 @@ urban-wage-premium-london/
 ├── README.md
 └── requirements.txt
 
-### How to Run
+### How to Run (tbd.)
 Shellpip install -r requirements.txt
 Then run notebooks in order:
 1. Data cleaning
