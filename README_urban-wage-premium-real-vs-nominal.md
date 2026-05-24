@@ -1,6 +1,6 @@
 # Do cities actually make people better off?
 This project investigates the urban wage premium in London, with a focus on distinguishing between nominal and real earnings.
-While workers in cities tend to earn higher wages, this premium may be offset by higher housing costs, commuting expenses, and inflation. Urban economic theory suggests that agglomeration effects increase productivity and wages, but also introduces counteracting forces such as cost of living and congestion. [link.springer.com]
+While workers in cities tend to earn higher wages, this premium may be offset by higher housing costs, commuting expenses, and inflation. Urban economic theory suggests that agglomeration effects increase productivity and wages, but also introduces counteracting forces such as cost of living and congestion.
 
 This project aims to quantify:
 - Whether London’s wage premium persists after adjusting for cost of living and social inclusion
@@ -90,28 +90,11 @@ Tables:
 
 ## Repository Structure (tbd.)
 urban-wage-premium-london/
+01. data = raw and cleaned datasets
+02. notebooks = analysis and modelling workflows
+03. src = reusable functions and scripts
+04. outputs = figures and final tables
 
-├── data/
-│   ├── raw/
-│   ├── processed/
-│
-├── notebooks/
-│   ├── 01_data_cleaning.ipynb
-│   ├── 02_exploration.ipynb
-│   ├── 03_modelling.ipynb
-│   ├── 04_visualisation.ipynb
-│
-├── src/
-│   ├── data_prep.py
-│   ├── feature_engineering.py
-│   ├── modelling.py
-│
-├── outputs/
-│   ├── figures/
-│   ├── tables/
-│
-├── README.md
-└── requirements.txt
 
 ### How to Run (tbd.)
 Shellpip install -r requirements.txt
