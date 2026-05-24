@@ -60,3 +60,4 @@ Some data sources to explore, or replicate with dummy data if unable to acess Op
 | Melbourne | HILDA Survey | Panel dataset | Longitudinal household survey | Individual wages, employment history | Panel regressions; controlling for sorting (fixed effects) | No (restricted access) |
 | Melbourne | AURIN | Urban spatial datasets | Integrated spatial data platform | Jobs density, housing, infrastructure | Agglomeration and density measures | Partial (free with registration) |
 | Melbourne | CoreLogic (or similar) | Property data | Housing market data | House prices, rents | Cost-of-living adjustment; real wages analysis | No (commercial dataset) |
+
