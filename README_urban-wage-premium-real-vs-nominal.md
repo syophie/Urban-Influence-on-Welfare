@@ -89,9 +89,8 @@ Tables:
 | Cost of Living (Social Inclusion) | Numbeo (or similar) | Cost of Living datasets | Crowdsourced price data for goods and services by city | Meal prices, cinema tickets, leisure costs | Direct proxy for social inclusion costs (cross-city comparison) | No (paid access for full datasets) |
 
 ## Repository Structure (tbd.)
-
 urban-wage-premium-london/
-│
+
 ├── data/
 │   ├── raw/
 │   ├── processed/
