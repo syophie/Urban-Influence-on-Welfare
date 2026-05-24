@@ -24,7 +24,8 @@ This project tests key mechanisms from urban labour economics:
 ## Methodology
 ### 1. Baseline Model (Nominal Wages)
 log(wage_it) = β₀ + β₁ London_i + β₂ X_it + ε_it
-  Where:
+
+Where:
   X_it = education, occupation, age, gender
 
 ### 2. Real Wage Adjustment
