@@ -22,14 +22,14 @@ This project tests key mechanisms from urban labour economics:
 - Sorting: Higher-ability workers self-select into cities
 - Real vs nominal trade-off: Higher wages may be offset by higher living costs
 
-## Methodology
-### 1. Baseline model: Nominal Wage
+# Methodology
+## 1. Baseline model: Nominal Wage
 log(wage_it) = β₀ + β₁ London_i + β₂ X_it + ε_it
 
 Where:  X_it = education, skill mix, age, gender
 Extensions for consideration: job flexibility (share of hybrid and remote working jobs)
 
-#### Assumptions: skill Mix
+### Assumptions: skill Mix
 Skill mix control for differences in the composition of jobs across boroughs, ensuring that observed wage differences are not simply driven by the presence of higher-paying occupations; that is, are people earning more because of where they are, or because of what jobs exist there?
 
 To get to skill mix, we need to first aggrgate the number of people employed by Skill Classification. Each SOC correlates to either a low-, mid- or high-skill classification, based on a classic economic proxy of education, earnings, complexity (cognitive or routine), and training (human capital invetsment) charactoristics. Occupation mix is used as a proxy for skill composition, although note that there are limitations to what we can learn about wages from skill mix alone. The table below details the exact splits:
@@ -53,20 +53,23 @@ Next, we want to create share of those jobs at Borough-level:
 
 While occupation-based classifications are widely used for proxy of skill mix, it does simplify heterogeneous roles within occupations and not fully capture task-based (cognitive vs routine) differences in modern labour markets. That is, occupation groups include a spectrum of roles from entry- to top-level within the same ocupation. Additioanlly, skills are not always correlated with wages; such as nurses, with high skills and low / contrained wages.
 
-##### Extension: Rethinking Skill in Modern Labour Markets
+Exploration for future extension: rethinking Skill in Modern Labour Markets
 In light of the definition limitations within ocupation groups, there are also wider limitations relating to the shift in modern work. Alongside the traditional skill mix proxy, It is important to critically assess how shifts in technology, education, and work patterns have weakened the traditional relationship between “skill” and wages.
 
 a. Hypothesis: Technological change may alter the relationship between skill and job availability
+
 Advances in automation and artificial intelligence are likely to reduce demand for routine cognitive and manual tasks, while increasing demand for workers with the skills required to design, manage, and complement these systems. This may result in a labour market characterised by fewer jobs overall in certain categories, but higher skill requirements within remaining roles.
 
 b. Hypothesis: Expansion of education may dilute its signalling value
+
 Access to higher education has expanded significantly in recent decades, increasing the supply of degree-qualified workers. As a result, educational attainment may no longer serve as a clear signal of productivity or earnings potential, particularly where graduate supply outpaces demand for high-skilled roles. This may weaken the relationship between traditional “high-skill” occupations and high wages.
 
 c. Hypothesis: Skill is increasingly defined by adaptability and self-directed learning
+
 Digital technologies have enabled new forms of work that are less tightly tied to formal occupational structures, such as freelance, platform-based, and “creator economy” roles. In these contexts, skills may be better proxied by adaptability, continuous learning, and technical capability, rather than formal occupation or qualification. This challenges the assumption that occupation-based classifications fully capture skill differences in modern labour markets.
 
 ### 2. Wage Adjustment
-Both real wages and social particpation wages are gaps in the literature. Both are important for evaluating welfare within the analysis.
+Both real wages and social particpation wages are gaps in the literature, especially at within city level. Real and particaptaion are important for evaluating welfare within the analysis.
 
 #### 2.a Real Adjustment
 real_wage = wage / cost_of_living_index
