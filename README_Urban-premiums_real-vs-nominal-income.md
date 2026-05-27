@@ -14,7 +14,7 @@ key insight: Does an urban wage premium exist in London?
 Supporting questions:
 - How does the wage premium change with distance from the city centre?
 - Is the premium concentrated among high-skill occupations?
-- How much of the premium is driven by: location (proximity) and worker characteristics (education, occupation)
+- How much of the premium is driven by: location (proximity to CBD / high job density areas) and worker characteristics (education, occupation)
 
 ### Economic Frameworks
 This project tests key mechanisms from urban labour economics:
