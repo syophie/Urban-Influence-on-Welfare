@@ -7,8 +7,8 @@ This project aims to quantify:
 - How the premium varies within the city (by geography, occupation, income level)
 
 ### Research Question
-key insights: Does a real urban wage premium exist in London?
-- does the London wage premium survives after cost-of-living adjustment?
+key insight: Does an urban wage premium exist in London?
+- does the London wage premium survive after cost-of-living and particaption adjustment?
 - Do cities actually increase welfare, or just increase nominal income?
 
 Supporting questions:
